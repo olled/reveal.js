@@ -1044,7 +1044,14 @@ body {
 	background: rgba( 0, 0, 0, 0.6 );
 }
 
-
+.reveal .footer{
+		position: absolute;
+		bottom: 1%;
+		left: 47%;
+}
+.reveal .footer img{
+		
+}
 /*********************************************
  * SPEAKER NOTES
  *********************************************/
