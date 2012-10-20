@@ -52,8 +52,7 @@
 						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
 					</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					<aside class="notes">Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
 					</aside>
 				</section>
 				
@@ -68,10 +67,14 @@
 						<a href="#/2/1" class="image">
 							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
+						<aside class="notes">Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					</aside>
 					</section>
 					<section>
 						<h2>Basement Level 1</h2>
 						<p>Press down or up to navigate.</p>
+						<aside class="notes">Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					</aside>
 					</section>
 					<section>
 						<h2>Basement Level 2</h2>
@@ -79,6 +82,8 @@
 						<a class="test" href="http://cornify.com">
 							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
 						</a>
+						<aside class="notes">Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					</aside>
 					</section>
 					<section>
 						<h2>Basement Level 3</h2>
@@ -336,6 +341,7 @@ function linkify( selector ) {
 				progress: true,
 				history: true,
 				
+				
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
 
@@ -347,7 +353,8 @@ function linkify( selector ) {
 					{ src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } },
 					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
-					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } }
+					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
+					{ src: 'plugin/console.log/log.js', async: true, condition: function() { return true; } }
 				]
 			});
 			

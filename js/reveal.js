@@ -254,6 +254,7 @@ var Reveal = (function(){
 	 */
 	function start() {
 		// Make sure we've got all the DOM elements we need
+		console.log(12312312312312312312)
 		setupDOM();
 		
 		// Subscribe to input
