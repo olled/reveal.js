@@ -1045,9 +1045,10 @@ body {
 }
 
 .reveal .footer{
-		position: absolute;
+		position: relative;
 		bottom: 1%;
-		left: 47%;
+		text-align: center;
+		margin-top: 59%;
 }
 .reveal .footer img{
 		
