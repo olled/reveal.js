@@ -36,23 +36,27 @@
 				<section>
 					<h1>People Managers Meeting</h1>
 					<h3>Projectplace India</h3>
-					<aside class="notes">
-						- Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					<aside class="notes">- Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
 					</aside>
 				</section>
 				
 				<section>
+					<!--img src="http://www.travelsupermarket.com/blog/wp-content/uploads/2010/11/Arinsal-Andorra-Dean-Evans.JPG"-->
 					<h2>Post Andorra</h2>
 					<p>
 						My move to Bangalore
 					</p>
 					<p>
 					<ul>
-						<li class="fragment">Recrutment</li>
+						<li class="fragment"><code>Recrutment</code></li>
 						<li class="fragment"><code>Core Values</code></li>
-						<li class="fragment"><strong>Communication</strong></li>
+						<li class="fragment"><code>Communication</code></li>
 					</ul>
 					</p>
+					<aside class="notes">RECRUTMENT: This is the primary focus for me this yeat, our plan is to grow Bangalore from 10 to almost 30 in a short time.
+CORE VALUES: To be able to grow we need a strong culture!
+COMMUNICATION: >>> "Worry grows easily in a remote site".
+					</aside>
 				</section>
 
 				<section>
@@ -226,7 +230,7 @@ function linkify( selector ) {
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
 				
@@ -242,7 +246,7 @@ function linkify( selector ) {
 					{ src: 'plugin/zoom-js/zoom.js', condition: function() { return !!document.body.classList; } },
 					{ src: '/socket.io/socket.io.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
 					{ src: 'plugin/speakernotes/client.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } },
-					{ src: 'plugin/console.log/log.js', async: true, condition: function() { return window.location.host === 'localhost:1947'; } }
+					{ src: 'plugin/console.log/log.js', async: true, condition: function() { return true; } }
 				]
 			});
 			
